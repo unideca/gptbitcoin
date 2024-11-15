@@ -148,7 +148,20 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                 <Flex ml={4} alignItems="center">                  
                     <Flex w="full" justifyContent="center">
                         <Flex flexDir="column" justifyContent="center" alignItems="center">
-                        <Img h={["420px","420px","420px","0","0px","0px","0px","0px"]} src="images/giphy.gif" zIndex={2}/>
+                        <MotionImg
+                            h={["400px","400px","400px","0px","0px","0px","0px","0px"]}
+                            src="images/1.png"
+                            zIndex={2}
+                            position="relative"
+                            initial={{ opacity: 1, y: -20 }}
+                            animate={{ y: [0, -20, 0] }}
+                            transition={{
+                                duration: 2,
+                                ease: "easeOut",
+                                repeat: Infinity, // 무한 반복 설정
+                                repeatType: "loop"
+                            }}
+                        />
                         <Text w={["320px","400px","400px","400px","400px","400px","400px"]} fontSize={["24px","32px","32px","32px","32px","40px","40px"]} fontWeight="bold" color="white">
                             GPT BITCOIN은 혁신적인 <br/>네트워크입니다
                         </Text>
@@ -238,7 +251,21 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             <Flex fontSize="20px" color="white" mt={4} mb={4} alignItems="center" gap={1}><Img w="24px" h="24px" src="images/usdt.png"/>USDT</Flex>
                         </Flex> */}
                         </Flex>
-                        <Img h={["0px","0px","0px","480px","480px","480px","480px","480px"]} src="images/giphy.gif" zIndex={2}/>
+                        <MotionImg
+                            h={["0px","0px","0px","440px","440px","440px","440px","440px"]}
+                            ml={4}
+                            src="images/1.png"
+                            zIndex={2}
+                            position="relative"
+                            initial={{ opacity: 1, y: -20 }}
+                            animate={{ y: [0, -20, 0] }}
+                            transition={{
+                                duration: 2,
+                                ease: "easeOut",
+                                repeat: Infinity, // 무한 반복 설정
+                                repeatType: "loop"
+                            }}
+                        />
                     </Flex>
                 </Flex>
             </Flex>

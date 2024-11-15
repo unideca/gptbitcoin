@@ -180,20 +180,20 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                     variant='outline'
                     color="white"
             />
-            <MenuList>
-                <MenuItem onClick={() => {setButtonText("SERVICES")}}>
+            <MenuList bgColor="#0C0E27">
+                <MenuItem onClick={() => {setButtonText("SERVICES")}} bgColor="#0C0E27" color="white">
                     SERVICES
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("ABOUT")}}>
+                <MenuItem onClick={() => {setButtonText("ABOUT")}} bgColor="#0C0E27" color="white">
                     ABOUT
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("TOKEN")}}>
+                <MenuItem onClick={() => {setButtonText("TOKEN")}} bgColor="#0C0E27" color="white">
                     TOKEN
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("ROADMAP")}}>
+                <MenuItem onClick={() => {setButtonText("ROADMAP")}} bgColor="#0C0E27" color="white">
                     ROADMAP
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("CONTACT")}}>
+                <MenuItem onClick={() => {setButtonText("CONTACT")}} bgColor="#0C0E27" color="white">
                     CONTACT
                 </MenuItem>
             </MenuList>
@@ -313,20 +313,20 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                     variant='outline'
                     color="white"
             />
-            <MenuList>
-                <MenuItem onClick={() => {setButtonText("SERVICES")}}>
-                    SERVICES
+            <MenuList bgColor="#0C0E27">
+                <MenuItem onClick={() => {setButtonText("SERVICES")}} bgColor="#0C0E27" color="white">
+                    SERVICES2
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("ABOUT")}}>
+                <MenuItem onClick={() => {setButtonText("ABOUT")}} bgColor="#0C0E27" color="white">
                     ABOUT
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("TOKEN")}}>
+                <MenuItem onClick={() => {setButtonText("TOKEN")}} bgColor="#0C0E27" color="white">
                     TOKEN
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("ROADMAP")}}>
+                <MenuItem onClick={() => {setButtonText("ROADMAP")}} bgColor="#0C0E27" color="white">
                     ROADMAP
                 </MenuItem>
-                <MenuItem onClick={() => {setButtonText("CONTACT")}}>
+                <MenuItem onClick={() => {setButtonText("CONTACT")}} bgColor="#0C0E27" color="white">
                     CONTACT
                 </MenuItem>
             </MenuList>
