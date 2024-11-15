@@ -315,7 +315,7 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
             />
             <MenuList bgColor="#0C0E27">
                 <MenuItem onClick={() => {setButtonText("SERVICES")}} bgColor="#0C0E27" color="white">
-                    SERVICES2
+                    SERVICES
                 </MenuItem>
                 <MenuItem onClick={() => {setButtonText("ABOUT")}} bgColor="#0C0E27" color="white">
                     ABOUT
