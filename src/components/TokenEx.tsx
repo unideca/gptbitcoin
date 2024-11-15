@@ -163,7 +163,7 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             }}
                         />
                         <Text w={["320px","400px","400px","400px","400px","400px","400px"]} fontSize={["24px","32px","32px","32px","32px","40px","40px"]} fontWeight="bold" color="white">
-                            GPT BITCOIN은 혁신적인 <br/>네트워크입니다
+                            GPT BITCOIN은 <br/>혁신적인 <br/>네트워크입니다
                         </Text>
                         {/* <Text w="400px" fontSize={["16px","16px","16px","16px","16px","24px","24px"]} color="white" mt={4} mb={4}>
                             Token Presale is 
