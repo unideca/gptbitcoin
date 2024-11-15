@@ -47,7 +47,7 @@ const TokenAllocation : FC<AboutProps> = ({isRender, tokenExInVariants, language
             alignItems="center"
         >
             <Text fontSize="26px" mb={20}>
-                TOKEN SALE PROCEEDS
+                TOKEN DISTRIBUTION PROCEEDS
             </Text>
             <motion.div
             initial="hidden"

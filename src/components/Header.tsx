@@ -17,6 +17,7 @@ interface HeaderProps {
 }
 
 const HeaderMenu = ["HOME", "SERVICES", "ABOUT", "TOKEN", "ROADMAP", "CONTACT"];
+const HeaderMenuKR = ["홈", "서비스", "프로젝트 개요", "토큰 분배", "로드맵", "문의"];
 
 
 const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef, tokenRef, tokenRoadmapRef, contactRef, language, setLanguage }) => {
@@ -123,6 +124,9 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                     color="white"
                     borderRadius="24px"
                     overflow="hidden"
+                    as="a" //down
+                    href="/documents/GPT BITCOIN whitepaper ver 0.1_eng.pdf" //down
+                    download="GPT BITCOIN whitepaper ver 0.1_eng.pdf" // 다운로드 속성 추가
                     _hover= {{
                         backgroundColor : "#0C0E27",
                         _before : {
@@ -223,7 +227,7 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
             </Flex>
             <Flex h="6vh" justifyContent="center" alignItems="center">
                 <Flex gap={["16px","16px","16px","16px","16px","20px","20px"]}>
-                {HeaderMenu.map((v,i) => (
+                {HeaderMenuKR.map((v,i) => (
                     <StyledButton
                     key={i} 
                     buttonText={buttonText}
@@ -256,6 +260,9 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                     color="white"
                     borderRadius="24px"
                     overflow="hidden"
+                    as="a" //down
+                    href="/documents/GPT BITCOIN whitepaper ver 0.1_kor.pdf" //down
+                    download="GPT BITCOIN whitepaper ver 0.1_kor.pdf" // 다운로드 속성 추가
                     _hover= {{
                         backgroundColor : "#0C0E27",
                         _before : {
@@ -315,19 +322,19 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
             />
             <MenuList bgColor="#0C0E27">
                 <MenuItem onClick={() => {setButtonText("SERVICES")}} bgColor="#0C0E27" color="white">
-                    SERVICES
+                    서비스
                 </MenuItem>
                 <MenuItem onClick={() => {setButtonText("ABOUT")}} bgColor="#0C0E27" color="white">
-                    ABOUT
+                    프로젝트 개요
                 </MenuItem>
                 <MenuItem onClick={() => {setButtonText("TOKEN")}} bgColor="#0C0E27" color="white">
-                    TOKEN
+                    토큰 분배
                 </MenuItem>
                 <MenuItem onClick={() => {setButtonText("ROADMAP")}} bgColor="#0C0E27" color="white">
-                    ROADMAP
+                    로드맵
                 </MenuItem>
                 <MenuItem onClick={() => {setButtonText("CONTACT")}} bgColor="#0C0E27" color="white">
-                    CONTACT
+                    문의
                 </MenuItem>
             </MenuList>
         </Menu>

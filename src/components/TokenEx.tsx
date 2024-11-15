@@ -54,7 +54,7 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             <Img src="images/x_logo.png"w={["100px","120px","120px","120px","120px","120px","120px"]}/>
                             <Img src="images/medium_logo.png" w={["100px","120px","120px","120px","120px","120px","120px"]}/>
                         </Flex>
-                        <Flex gap={3} py={5} w={["340px","400px","400px","400px","400px","400px","400px"]}>
+                        <Flex gap={3} py={5} w={["340px","400px","400px","400px","400px","400px","400px"]} justifyContent="center">
                         <Button
                             h={["40px","40px","40px","40px","40px","52px","52px"]}
                             bgGradient="linear(to-r, #1a3b8f, #1a8f3b)"
@@ -62,6 +62,9 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             borderRadius="24px"
                             padding="12px 24px"
                             fontWeight="bold"
+                            as="a" //down
+                            href="/documents/GPT BITCOIN whitepaper ver 0.1_eng.pdf" //down
+                            download="GPT BITCOIN whitepaper ver 0.1_eng.pdf" // 다운로드 속성 추가
                             overflow="hidden" //overflow가 들어가면 버튼 이외의 영역을 잘라줘서 무빙 그라데이션 효과
                             _hover={{
                                 backgroundColor : "#0C0E27",
@@ -84,7 +87,7 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             WHITEPAPER →
                         </Button>
                         
-                        <Button
+                        {/* <Button
                             h={["40px","40px","40px","40px","40px","52px","52px"]}
                             bgGradient="linear(to-r, #1a3b8f, #1a8f3b)"
                             color="white"
@@ -111,7 +114,7 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                               }}
                             >
                             BUY TOKEN NOW →
-                        </Button>
+                        </Button> */}
                         </Flex>
                         {/* <Text w="400px" fontSize="16px" color="white" mt={4}>WE ACCEPT :</Text>
                         <Flex w="400px" gap={8}>
@@ -184,7 +187,7 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             <Img src="images/x_logo.png" w={["100px","120px","120px","120px","120px","120px","120px"]}/>
                             <Img src="images/medium_logo.png" w={["100px","120px","120px","120px","120px","120px","120px"]}/>
                         </Flex>
-                        <Flex gap={3} py={5} w={["340px","400px","400px","400px","400px","400px","400px"]}>
+                        <Flex gap={3} py={5} w={["340px","400px","400px","400px","400px","400px","400px"]} justifyContent="center">
                         <Button
                             h={["40px","40px","40px","40px","40px","52px","52px"]}
                             bgGradient="linear(to-r, #1a3b8f, #1a8f3b)"
@@ -192,6 +195,9 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             borderRadius="24px"
                             padding="12px 24px"
                             fontWeight="bold"
+                            as="a" //down
+                            href="/documents/GPT BITCOIN whitepaper ver 0.1_kor.pdf" //down
+                            download="GPT BITCOIN whitepaper ver 0.1_kor.pdf" // 다운로드 속성 추가
                             overflow="hidden" //overflow가 들어가면 버튼 이외의 영역을 잘라줘서 무빙 그라데이션 효과
                             _hover={{
                                 backgroundColor : "#0C0E27",
@@ -214,7 +220,7 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             백서 →
                         </Button>
                         
-                        <Button
+                        {/* <Button
                             h={["40px","40px","40px","40px","40px","52px","52px"]}
                             bgGradient="linear(to-r, #1a3b8f, #1a8f3b)"
                             color="white"
@@ -241,7 +247,7 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                               }}
                             >
                             토큰 구매하기 →
-                        </Button>
+                        </Button> */}
                         </Flex>
                         {/* <Text w="400px" fontSize="16px" color="white" mt={4}>WE ACCEPT :</Text>
                         <Flex w="400px" gap={8}>
