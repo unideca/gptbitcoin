@@ -43,6 +43,18 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
             scrollToComponent(tokenRef);
         } else if (buttonText === "CONTACT") {
             scrollToComponent(contactRef);
+        } else if (buttonText === "홈") {
+            scrollToComponent(tokenHomeRef);
+        } else if (buttonText === "서비스") {
+            scrollToComponent(tokenServiceRef);
+        } else if (buttonText === "프로젝트 개요") {
+            scrollToComponent(tokenAboutRef);
+        } else if (buttonText === "토큰 분배") {
+            scrollToComponent(tokenRef);
+        } else if (buttonText === "로드맵") {
+            scrollToComponent(tokenRoadmapRef);
+        } else if (buttonText === "문의") {
+            scrollToComponent(contactRef);
         }
     }
 
@@ -85,7 +97,9 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
             justifyContent="space-between"
             zIndex={4} // 아래로 넘어갈 때 글자 안보임
         >
-            <Flex alignItems="center" color="white" position="relative">
+            <Flex alignItems="center" color="white" position="relative"
+            as="a"
+            href="/" >
                 <Img w="80px" src="images/gbitlogo.png" zIndex={4}/>
                 <Text w="160px" fontSize="24px" position="absolute" left="72px" top="20px">GPT BITCOIN</Text>
             </Flex>
@@ -125,8 +139,8 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                     borderRadius="24px"
                     overflow="hidden"
                     as="a" //down
-                    href="/documents/GPT BITCOIN whitepaper ver 0.1_eng.pdf" //down
-                    download="GPT BITCOIN whitepaper ver 0.1_eng.pdf" // 다운로드 속성 추가
+                    href="/documents/GPT BITCOIN whitepaper ver 1.0_eng.pdf" //down
+                    download="GPT BITCOIN whitepaper ver 1.0_eng.pdf" // 다운로드 속성 추가
                     _hover= {{
                         backgroundColor : "#0C0E27",
                         _before : {
@@ -221,7 +235,9 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
             justifyContent="space-between"
             zIndex={4} // 아래로 넘어갈 때 글자 안보임
         >
-            <Flex alignItems="center" color="white" position="relative">
+            <Flex alignItems="center" color="white" position="relative"
+            as="a"
+            href="/">
                 <Img w="80px" src="images/gbitlogo.png" zIndex={4}/>
                 <Text w="160px" fontSize="24px" position="absolute" left="72px" top="20px">GPT BITCOIN</Text>
             </Flex>
@@ -261,8 +277,8 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                     borderRadius="24px"
                     overflow="hidden"
                     as="a" //down
-                    href="/documents/GPT BITCOIN whitepaper ver 0.1_kor.pdf" //down
-                    download="GPT BITCOIN whitepaper ver 0.1_kor.pdf" // 다운로드 속성 추가
+                    href="/documents/GPT BITCOIN whitepaper ver 1.0_kor.pdf" //down
+                    download="GPT BITCOIN whitepaper ver 1.0_kor.pdf" // 다운로드 속성 추가
                     _hover= {{
                         backgroundColor : "#0C0E27",
                         _before : {

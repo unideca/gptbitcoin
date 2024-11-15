@@ -63,8 +63,8 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             padding="12px 24px"
                             fontWeight="bold"
                             as="a" //down
-                            href="/documents/GPT BITCOIN whitepaper ver 0.1_eng.pdf" //down
-                            download="GPT BITCOIN whitepaper ver 0.1_eng.pdf" // 다운로드 속성 추가
+                            href="/documents/GPT BITCOIN whitepaper ver 1.0_eng.pdf" //down
+                            download="GPT BITCOIN whitepaper ver 1.0_eng.pdf" // 다운로드 속성 추가
                             overflow="hidden" //overflow가 들어가면 버튼 이외의 영역을 잘라줘서 무빙 그라데이션 효과
                             _hover={{
                                 backgroundColor : "#0C0E27",
@@ -196,8 +196,8 @@ const TokenEx : FC<TokenExProps> = ({language}) => {
                             padding="12px 24px"
                             fontWeight="bold"
                             as="a" //down
-                            href="/documents/GPT BITCOIN whitepaper ver 0.1_kor.pdf" //down
-                            download="GPT BITCOIN whitepaper ver 0.1_kor.pdf" // 다운로드 속성 추가
+                            href="/documents/GPT BITCOIN whitepaper ver 1.0_kor.pdf" //down
+                            download="GPT BITCOIN whitepaper ver 1.0_kor.pdf" // 다운로드 속성 추가
                             overflow="hidden" //overflow가 들어가면 버튼 이외의 영역을 잘라줘서 무빙 그라데이션 효과
                             _hover={{
                                 backgroundColor : "#0C0E27",
