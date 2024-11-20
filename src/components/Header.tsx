@@ -116,7 +116,7 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                 </Flex>
             </Flex>
             <Flex gap={4} alignItems="center">
-                <Flex alignItems="center">
+                {/* <Flex alignItems="center">
                     <Image src="images/us.png" w="20px" h="20px"/>
                     <Menu>
                         <MenuButton as={Button} variant="none" color="white" _hover={{"color" : "#A3468C", "transition" : "color 0.5s ease"}}>
@@ -129,7 +129,7 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                             <MenuItem bgColor="#0C0E27" color="white" _hover={{"fontWeight" : "bold", "color" : "#A3468C", "bgColor" : "gray.300", transition : "background-color 0.5s ease, color 0.1s ease"}} onClick={() => setLanguage('KR')}><Image src="images/kr.png" w="20px" h="20px" mr={2}/>KR</MenuItem>
                         </MenuList>
                     </Menu>
-                </Flex>
+                </Flex> */}
                 <Button
                     w={["90px","90px","90px","90px","90px","120px","120px"]}
                     h={["30px","30px","30px","30px","30px","36px","36px"]}
@@ -177,7 +177,7 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
             position="relative">
             
             <Img w="80px" src="images/gbitlogo.png" zIndex={4}/>
-            <Flex alignItems="center" position="absolute" right={12}>
+            {/* <Flex alignItems="center" position="absolute" right={12}>
                 <Menu>
                     <MenuButton as={Button} variant="none" color="white" _hover={{"color" : "#A3468C", "transition" : "color 0.5s ease"}}>
                         <Flex w={10} fontSize={["12px","12px","12px","12px","12px","16px","16px"]}>
@@ -189,7 +189,7 @@ const Header : FC<HeaderProps> = ({tokenHomeRef, tokenServiceRef, tokenAboutRef,
                         <MenuItem bgColor="#0C0E27" color="white" _hover={{"fontWeight" : "bold", "color" : "#A3468C", "bgColor" : "gray.300", transition : "background-color 0.5s ease, color 0.1s ease"}} onClick={() => setLanguage('KR')}><Image src="images/kr.png" w="20px" h="20px" mr={2}/>KR</MenuItem>
                     </MenuList>
                 </Menu>
-            </Flex>
+            </Flex> */}
             <Menu>
                 <MenuButton
                     as={IconButton}
